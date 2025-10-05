@@ -1,0 +1,70 @@
+Task:
+Given the edges of a simple directed weighted graph with N nodes and M edges,
+prepare the adjacency list representation of that graph.
+The nodes are numbered from 1 to N.
+
+Input:
+First line contains the number of tests. The description of each test follows.
+Each test is described by four lines. First line contains N and M. Second line
+contains M integers U[i]. Third line contains M integers V[i]. Forth line
+contains M integers W[i]. There is an edge from U[i] to V[i] with weight W[i].
+
+Output:
+For each test in the given order, print N lines representing the adjacency list
+which you are asked to prepare in this task. The i'th line has "i:" followed by
+some (x,y) pairs such that there is an edge from i to x with weight y.
+
+Example-1 (batch-1):
+Input (stdin):
+2
+1 0
+
+
+
+4 5
+4 1 4 3 3
+3 2 2 2 1
+4 4 10 8 5
+Note: Input contains three empty lines somewhere in the middle.
+Output (stdout):
+1:
+1: (2,4)
+2:
+3: (2,8) (1,5)
+4: (3,4) (2,10)
+
+Example-2 (batch-2):
+Input (stdin):
+2
+2 1
+1
+2
+30
+4 4
+3 3 2 4
+2 1 1 3
+9 5 8 10
+Output (stdout):
+1: (2,30)
+2:
+1:
+2: (1,8)
+3: (2,9) (1,5)
+4: (3,10)
+
+Scoring:
+Batch   Score   Tests   Constraints
+1       0.1     2       1<=N<=5, 0<=M<=N^2-N, 1<=U[i]<=N, 1<=V[i]<=N, 1<=W[i]<=10
+2       0.1     2       1<=N<=5, 0<=M<=N^2-N, 1<=U[i]<=N, 1<=V[i]<=N, 1<=W[i]<=100
+3       0.2     10000   1<=N<=10, 0<=M<=N^2-N, 1<=U[i]<=N, 1<=V[i]<=N, 1<=W[i]<=1000
+4       0.3     400     1<=N<=50, 0<=M<=N^2-N, 1<=U[i]<=N, 1<=V[i]<=N, 1<=W[i]<=1000
+5       0.3     100     1<=N<=100, 0<=M<=N^2-N, 1<=U[i]<=N, 1<=V[i]<=N, 1<=W[i]<=1000
+------------------------
+5       1       Total
+
+Time limit: 1s (cpp) or 1.5s (java) or 3s (py) per batch.
+
+Hints:
+- Use fast input/output methods.
+- 0.2 score for passing only sample batches.
+- O(N^2) solution is expected.

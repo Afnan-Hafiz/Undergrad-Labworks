@@ -1,0 +1,51 @@
+Task:
+Given a list of N integers A[i], count the number of pairs of positions (x, y)
+such that x < y and A[x] > A[y]^2.
+
+Input:
+First line contains the number of tests. The description of each test follows.
+Each test is described by two lines. First line contains N. Second line
+contains the integers A[i].
+
+Output:
+For each test in the given order, print the number you are asked to find in
+this task in one line.
+
+Example-1 (batch-1):
+Input (stdin):
+2
+2
+1 2
+5
+5 4 3 -2 -1
+Output (stdout):
+0
+4
+
+Example-2 (batch-2):
+Input (stdin):
+2
+6
+10 2 5 1 -2 25
+1
+-10
+Output (stdout):
+6
+0
+
+Scoring:
+Batch   Score   Tests   Constraints
+1       0.1     2       1<=N<=10, 1<=abs(A[i])<=10
+2       0.1     2       1<=N<=10, 1<=abs(A[i])<=100
+3       0.2     10000   1<=N<=20, 1<=abs(A[i])<=1000
+4       0.3     20      1<=N<=10000, 1<=abs(A[i])<=100000
+5       0.3     2       1<=N<=100000, 1<=abs(A[i])<=10000000
+------------------------
+5       1       Total
+
+Time limit: 1s (cpp) or 1.5s (java) or 3s (py) per batch.
+
+Hints:
+- Use fast input/output methods.
+- 0.2 score for passing only sample batches.
+- O(N*log(N)) solution is expected.

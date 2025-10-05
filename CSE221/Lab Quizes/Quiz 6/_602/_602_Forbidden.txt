@@ -1,0 +1,8 @@
+open
+file
+creat(
+fstream
+thread
+process
+system(
+exec(

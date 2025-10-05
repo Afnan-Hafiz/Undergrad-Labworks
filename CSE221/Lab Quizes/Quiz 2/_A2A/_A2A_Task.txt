@@ -1,0 +1,62 @@
+Task:
+Given a list of N integers A[i] sorted in non-decreasing order, find two
+distinct positions (in 1-based indexing) in the list such that the sum of the
+integers in those two positions equal to S, or determine that there are no such
+two positions.
+
+Input:
+First line contains the number of tests. The description of each test follows.
+Each test is described by two lines. First line contains N and S. Second line
+contains the integers A[i].
+
+Output:
+For each test in the given order, if there exists two positions which you are
+asked to find in this task then print them in one line, otherwise if there are
+no such two positions then print -1 in one line.
+
+Example-1 (batch-1):
+Input (stdin):
+2
+4 10
+1 3 5 7
+4 7
+2 4 6 8
+Output (stdout):
+2 4
+-1
+
+Example-2 (batch-2):
+Input (stdin):
+2
+6 18
+1 5 8 9 9 10
+4 10
+1 5 6 8
+Output (stdout):
+3 6
+-1
+Alternate Output (stdout):
+5 4
+-1
+
+Scoring:
+Batch   Score   Tests   Constraints
+1       0.1     2       1<=N<=5, 1<=S<=10, 1<=A[i]<=10
+2       0.1     2       1<=N<=10, 1<=S<=100, 1<=A[i]<=100
+3       0.1     20      1<=N<=100, 1<=S<=1000000000, 1<=A[i]<=1000000000
+4       0.1     20      1<=N<=1000, 1<=S<=1000000000, 1<=A[i]<=1000000000
+5       0.1     20      1<=N<=10000, 1<=S<=1000000000, 1<=A[i]<=1000000000
+6       0.1     20000   1<=N<=100, 1<=S<=1000000000, 1<=A[i]<=1000000000
+7       0.1     2000    1<=N<=1000, 1<=S<=1000000000, 1<=A[i]<=1000000000
+8       0.1     200     1<=N<=10000, 1<=S<=1000000000, 1<=A[i]<=1000000000
+9       0.1     20      1<=N<=100000, 1<=S<=1000000000, 1<=A[i]<=1000000000
+10      0.1     2       1<=N<=1000000, 1<=S<=1000000000, 1<=A[i]<=1000000000
+------------------------
+10      1       Total
+
+Time limit: 2s (cpp) or 3s (java) or 6s (py) per batch.
+
+Hints:
+- Use fast input/output methods.
+- 0.2 score for passing only sample batches.
+- O(N) solution is expected.
